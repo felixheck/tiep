@@ -24,11 +24,11 @@
     "email": "hi@whoTheHeck.com",
     "url": "https://github.com/felixheck/tiep/issues"
   },
-  "main": "./dist/typify.js",
+  "main": "./src/tiep.min.js",
   "scripts": {
     "start": "npm test",
     "test": "rm -rf test/coverage && karma start karma.conf.js",
-    "prepublish": "uglifyjs src/index.js > dist/tiep.js"
+    "prepublish": "uglifyjs src/tiep.js > src/tiep.min.js"
   },
   "devDependencies": {
     "angular": "^1.5.6",

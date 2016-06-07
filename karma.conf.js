@@ -10,7 +10,7 @@
         'node_modules/angular/angular.js',
         'node_modules/angular-mocks/angular-mocks.js',
         'node_modules/lodash/lodash.js',
-        'src/index.js',
+        'src/tiep.js',
         'test/**/*.spec.js'
       ],
       exclude: [],
