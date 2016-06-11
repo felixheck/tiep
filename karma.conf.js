@@ -33,13 +33,12 @@
         'karma-jasmine',
         'karma-mocha-reporter',
         'karma-coverage',
-        'karma-firefox-launcher',
-        'karma-chrome-launcher'
+        'karma-phantomjs-launcher',
       ],
       port: 9876,
       colors: true,
       logLevel: config.LOG_INFO,
-      browsers: ['Chrome', 'Firefox'],
+      browsers: ['PhantomJS'],
       autoWatch: true,
       singleRun: false
     });
