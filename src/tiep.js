@@ -24,22 +24,22 @@
     .module('tiep', [])
     .filter('tiep', function() {
       return function(input, accessKey, mapping) {
-        var dataType;
+        var key;
 
         accessKey = accessKey || defaults.accessKey;
         mapping = mapping || defaults.mapping;
         
         if (_.isString(input)) {
-          dataType = input;
+          key = input;
         } else if (_.isPlainObject(input) && input.hasOwnProperty(accessKey)) {
-          dataType = input[accessKey];
+          key = input[accessKey];
         } else if (_.isPlainObject(input) && !input.hasOwnProperty(accessKey)) {
           throw new SyntaxError('Passed object have no ' + accessKey + ' property.');
         } else {
           throw new TypeError('Passed input have to be a string or an object');
         }
 
-        return mapping[dataType] || defaults.type;
+        return mapping[key] || defaults.type;
       };
     });
 })();
