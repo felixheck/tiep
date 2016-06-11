@@ -34,9 +34,9 @@
         } else if (_.isPlainObject(input) && input.hasOwnProperty(accessKey)) {
           key = input[accessKey];
         } else if (_.isPlainObject(input) && !input.hasOwnProperty(accessKey)) {
-          throw new SyntaxError('Passed object have no ' + accessKey + ' property.');
+          throw new SyntaxError('Passed object have no "' + accessKey + '" property.');
         } else {
-          throw new TypeError('Passed input have to be a string or an object');
+          throw new TypeError('The input to be filtered is neither string nor plain object');
         }
 
         return mapping[key] || defaults.type;
