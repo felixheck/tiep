@@ -6,6 +6,7 @@
 - **fix:** rename property
 - **fix:** error messages
 - **add:** integer to default mapping
+- **add:** function documentation
 
 ### [v0.0.1] - 2016-06-07
 - **add:** initial files

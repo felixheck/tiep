@@ -24,6 +24,22 @@
   angular
     .module('tiep', [])
     .filter('tiep', function() {
+
+      /**
+       * @function
+       *
+       * @description
+       * Get input.type based on a data/input type mapping
+       *
+       * @param {string | Object} input The input to be filtered/analyzed
+       * @param {string} [accessKey] The property to be checked if an object is passed
+       * @param {Object} [mapping] A custom mapping
+       *
+       * @throws {SyntaxError} If the required key is missing in the passed object
+       * @throws {TypeError} If the input is neither string nor plain object
+       *
+       * @returns {string} The mapped input.type
+       */
       return function(input, accessKey, mapping) {
         var key;
 
