@@ -16,6 +16,7 @@
       boolean: 'checkbox',
       date: 'date',
       number: 'number',
+      integer: 'number',
       string: 'text'
     }
   };

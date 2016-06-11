@@ -20,6 +20,11 @@ describe('tiep', function() {
         .toEqual('number');
     });
 
+    it('should return "number" for integer', function() {
+      expect($filter('tiep')('integer'))
+        .toEqual('number');
+    });
+
     it('should return "checkbox"', function() {
       expect($filter('tiep')('boolean'))
         .toEqual('checkbox');
@@ -44,6 +49,11 @@ describe('tiep', function() {
 
     it('should return "number"', function() {
       expect($filter('tiep')({type: 'number'}))
+        .toEqual('number');
+    });
+
+    it('should return "number" for integer', function() {
+      expect($filter('tiep')({type: 'integer'}))
         .toEqual('number');
     });
 
