@@ -4,10 +4,13 @@
   "keywords": [
     "angular",
     "angularjs",
+    "filter",
     "input",
     "form",
     "type",
-    "mapping"
+    "mapping",
+    "datatype",
+    "html"
   ],
   "version": "0.1.0",
   "license": "MIT",

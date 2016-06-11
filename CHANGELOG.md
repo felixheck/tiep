@@ -1,6 +1,7 @@
 # master
 
 ### unreleased
+- **add:** npm keywords
 
 ### [v0.1.0] - 2016-06-11
 - **fix:** move minified version
