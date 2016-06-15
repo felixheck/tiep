@@ -41,9 +41,9 @@ Include **tiep** and **lodash** into your application:
 </head>
 <body>
 	...
-
-	<script src="../tiep.js"></script>
+	
 	<script src="../lodash.min.js"></script>
+	<script src="../tiep.js"></script>
 </body>
 </html>
 ```
